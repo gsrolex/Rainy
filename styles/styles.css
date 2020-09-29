@@ -1,9 +1,78 @@
-h1 style {
-  background-color: DodgerBlue;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #495773;
 }
-p style {
-  background-color: Tomato;
+.container {
+  display: flex;
 }
-.bottom {
-  background-color: green;
+.cropped {
+  width: 1760px; /* width of container */
+  height: 677px; /* height of container */
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 20% 50px;
+}
+.cropped img {
+  margin: -10px 0px 0px -180px;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  color: #495773;
+  border: 3px #495773;
+  text-decoration: none;
+  padding: 50px;
+  margin: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  padding: 0px;
+}
+header img {
+  height: 107px;
+  width: auto;
+}
+
+/* new arrivals and the rest of grid */
+.grid {
+  display: inline-flex;
+  flex: 1 1 533px;
+  flex-wrap: wrap;
+}
+.grid img {
+  width: 533px; /* width of container */
+  height: 533px; /* height of container */
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 100% 50px;
+}
+.newarrivals {
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.newarrivals .newarrivalstext {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(0, 0, 0, 0.8);
+
+  color: #fff;
+  width: 60%; /* Set the width of the positioned div */
+}
+.pay {
+  max-width: 50px;
+  height: auto;
+}
+
+/* footer */
+footer img {
+  width: 100px; /* width of container */
+  height: auto; /* height of container */
 }
