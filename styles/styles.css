@@ -15,32 +15,37 @@ body {
 .cropped img {
   margin: -10px 0px 0px -180px;
 }
+
 nav li {
   display: inline-block;
 }
 nav a {
   color: #495773;
-  border: 3px #495773;
+  border: 3px solid #495773;
   text-decoration: none;
-  padding: 50px;
+  padding: 10px;
   margin: 20px;
 }
 nav a:hover {
   text-decoration: underline;
 }
-nav ul {
-  padding: 0px;
-}
 header img {
   height: 107px;
   width: auto;
 }
-
+.centera {
+  max-width: 1759px;
+  margin: 0 auto;
+  justify-content: center;
+  /* background-color: lightblue; */
+}
 /* new arrivals and the rest of grid */
 .grid {
   display: inline-flex;
   flex: 1 1 533px;
+  max-width: 1759px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .grid img {
   width: 533px; /* width of container */
@@ -49,30 +54,108 @@ header img {
   object-fit: cover;
   object-position: 100% 50px;
 }
-.newarrivals {
+/* -----------------------------Carousel---------------------------------------------- */
+.carousel {
   position: relative;
   display: inline-block; /* Make the width of box same as image */
 }
-.newarrivals .newarrivalstext {
+.carousel .carousel-text {
   position: absolute;
   z-index: 999;
   margin: 0 auto;
   left: 0;
   right: 0;
   text-align: center;
-  top: 50%; /* Adjust this value to move the positioned div up and down */
-  background: rgba(0, 0, 0, 0.8);
-
+  text-transform: uppercase;
+  top: 70%; /* Adjust this value to move the positioned div up and down */
+  width: 50%; /* Set the width of the positioned div */
+}
+.carousel-text ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.carousel-text li {
+  display: inline;
+}
+.carousel-text a {
   color: #fff;
-  width: 60%; /* Set the width of the positioned div */
+  border: 3px solid #fff;
+  text-decoration: none;
+
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  margin: 60px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 8px #000;
+}
+.carousel-text a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.carousel .carousel-text-sale {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 30%; /* Adjust this value to move the positioned div up and down */
+  font-size: 135px;
+  color: #ffa800;
+  width: 50%; /* Set the width of the positioned div */
+  text-shadow: 2px 2px 8px #000;
+}
+.carousel .carousel-text-upto {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%; /* Adjust this value to move the positioned div up and down */
+  font-size: 40px;
+  color: #fff;
+  width: 50%; /* Set the width of the positioned div */
+  text-shadow: 2px 2px 8px #000;
+}
+/* -----------------------------Middle Grid------------------------------------------- */
+.picture {
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.picture .picture-text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 75%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  color: #0a3641;
+  text-shadow: 2px 2px 8px #fff;
+  width: 100%; /* Set the width of the positioned div */
 }
 .pay {
   max-width: 50px;
   height: auto;
 }
 
-/* footer */
+/* -----------------------------footer----------------------------------------------- */
 footer img {
   width: 100px; /* width of container */
   height: auto; /* height of container */
+}
+.top-footer {
+  background-color: #9bb9bf;
+}
+.footer {
+  background-color: #495773;
 }
