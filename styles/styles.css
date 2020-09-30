@@ -4,6 +4,8 @@ body {
 }
 .container {
   display: flex;
+  max-width: 1759px;
+  margin: 0 auto;
 }
 .cropped {
   width: 1760px; /* width of container */
@@ -15,16 +17,25 @@ body {
 .cropped img {
   margin: -10px 0px 0px -180px;
 }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
 
 nav li {
-  display: inline-block;
+  display: inline;
 }
 nav a {
   color: #495773;
   border: 3px solid #495773;
   text-decoration: none;
+  display: block;
   padding: 10px;
-  margin: 20px;
+  min-width: 200px;
+  margin: 25px;
+  text-align: center;
+  border-radius: 3px;
 }
 nav a:hover {
   text-decoration: underline;
@@ -37,23 +48,10 @@ header img {
   max-width: 1759px;
   margin: 0 auto;
   justify-content: center;
+  padding-top: 80px;
   /* background-color: lightblue; */
 }
-/* new arrivals and the rest of grid */
-.grid {
-  display: inline-flex;
-  flex: 1 1 533px;
-  max-width: 1759px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.grid img {
-  width: 533px; /* width of container */
-  height: 533px; /* height of container */
-  overflow: hidden;
-  object-fit: cover;
-  object-position: 100% 50px;
-}
+
 /* -----------------------------Carousel---------------------------------------------- */
 .carousel {
   position: relative;
@@ -66,7 +64,6 @@ header img {
   left: 0;
   right: 0;
   text-align: center;
-  text-transform: uppercase;
   top: 70%; /* Adjust this value to move the positioned div up and down */
   width: 50%; /* Set the width of the positioned div */
 }
@@ -80,20 +77,25 @@ header img {
 }
 .carousel-text a {
   color: #fff;
-  border: 3px solid #fff;
   text-decoration: none;
-
-  padding-top: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 10px;
-  margin: 60px;
+  border: 3px solid #fff;
+  padding: 10px;
+  display: block;
+  min-width: 200px;
   font-size: 20px;
-  background: rgba(0, 0, 0, 0.5);
   text-shadow: 2px 2px 8px #000;
+  border-radius: 3px;
+}
+.border {
+  padding: 7px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: rgba(33, 33, 33, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 3px;
 }
 .carousel-text a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
 }
 .carousel .carousel-text-sale {
   position: absolute;
@@ -124,6 +126,23 @@ header img {
   text-shadow: 2px 2px 8px #000;
 }
 /* -----------------------------Middle Grid------------------------------------------- */
+/* new arrivals and the rest of grid */
+.grid {
+  display: inline-flex;
+  flex: 1 1 533px;
+  max-width: 1759px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid img {
+  width: 533px; /* width of container */
+  height: 533px; /* height of container */
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 25% 0px;
+  margin-top: 80px;
+  padding-top: -4px;
+}
 .picture {
   position: relative;
   display: inline-block; /* Make the width of box same as image */
@@ -155,6 +174,9 @@ footer img {
 }
 .top-footer {
   background-color: #9bb9bf;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
 }
 .footer {
   background-color: #495773;
