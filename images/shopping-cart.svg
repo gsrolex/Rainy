@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.215" height="34.664" viewBox="0 0 36.215 34.664">
+  <g id="shopping-cart" transform="translate(0.576 0.505)">
+    <g id="Group_16" data-name="Group 16">
+      <g id="Group_15" data-name="Group 15" transform="translate(0 0)">
+        <path id="Path_16" data-name="Path 16" d="M34.524,15.473a2.63,2.63,0,0,0-2.038-.956H12.1a.756.756,0,0,0,0,1.513H32.486a1.108,1.108,0,0,1,.871.406,1.159,1.159,0,0,1,.241.959L30.574,32.509a1.142,1.142,0,0,1-1.114.917H12.647l-6.942-20.9a2.689,2.689,0,0,0-2.554-1.792h0c-.987.034-1.987.034-2.232.017a.756.756,0,0,0-.7,1.274c.234.234.313.313,2.955.222a1.164,1.164,0,0,1,1.1.768l7.11,21.406a.757.757,0,0,0,.718.518H29.46a2.648,2.648,0,0,0,2.595-2.121l3.027-15.132A2.669,2.669,0,0,0,34.524,15.473Z" transform="translate(0.001 -10.735)" fill="#495773" stroke="#495773" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(11.345 22.691)">
+      <g id="Group_17" data-name="Group 17">
+        <path id="Path_17" data-name="Path 17" d="M183.118,347.1H169.351a1.154,1.154,0,0,1-1.061-.771l-1.475-4.387a.756.756,0,1,0-1.434.482l1.478,4.4a2.655,2.655,0,0,0,2.492,1.792h13.766a.756.756,0,1,0,0-1.512Z" transform="translate(-165.342 -341.426)" fill="#495773" stroke="#495773" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_20" data-name="Group 20" transform="translate(13.237 28.364)">
+      <g id="Group_19" data-name="Group 19">
+        <path id="Path_18" data-name="Path 18" d="M195.552,424.1a2.647,2.647,0,1,0,2.647,2.647A2.65,2.65,0,0,0,195.552,424.1Zm0,3.782a1.135,1.135,0,1,1,1.135-1.135A1.136,1.136,0,0,1,195.552,427.886Z" transform="translate(-192.905 -424.104)" fill="#495773" stroke="#495773" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_22" data-name="Group 22" transform="translate(26.474 28.364)">
+      <g id="Group_21" data-name="Group 21">
+        <path id="Path_19" data-name="Path 19" d="M388.458,424.1a2.647,2.647,0,1,0,2.647,2.647A2.651,2.651,0,0,0,388.458,424.1Zm0,3.782a1.135,1.135,0,1,1,1.135-1.135A1.136,1.136,0,0,1,388.458,427.886Z" transform="translate(-385.811 -424.104)" fill="#495773" stroke="#495773" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

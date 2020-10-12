@@ -1,15 +1,36 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #495773;
+  font-size: 1rem;
 }
 .container {
   display: flex;
   max-width: 1759px;
   margin: 0 auto;
 }
+
+.topicon img {
+  max-width: 40px;
+  max-height: auto;
+}
+.topicon {
+  margin-left: 34em;
+}
+hr {
+  display: grid;
+  max-width: auto;
+  border: none;
+  height: 20px;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 0px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+}
 .cropped {
-  width: 1760px; /* width of container */
-  height: 677px; /* height of container */
+  width: 1760px;
+  height: 677px;
   overflow: hidden;
   object-fit: cover;
   object-position: 20% 50px;
@@ -36,26 +57,30 @@ nav a {
   margin: 25px;
   text-align: center;
   border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #ececec;
 }
 header img {
   height: 107px;
   width: auto;
 }
 .centera {
-  max-width: 1759px;
+  display: grid;
+  max-width: 110rem;
   margin: 0 auto;
   justify-content: center;
   padding-top: 80px;
-  /* background-color: lightblue; */
+  position: relative;
 }
 
 /* -----------------------------Carousel---------------------------------------------- */
 .carousel {
   position: relative;
-  display: inline-block; /* Make the width of box same as image */
+  display: inline-block;
 }
 .carousel .carousel-text {
   position: absolute;
@@ -64,13 +89,17 @@ header img {
   left: 0;
   right: 0;
   text-align: center;
-  top: 70%; /* Adjust this value to move the positioned div up and down */
-  width: 50%; /* Set the width of the positioned div */
+  top: 70%;
+  width: 50%;
 }
 .carousel-text ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
+}
+.carousel-image {
+  max-width: 120%;
+  max-height: auto;
 }
 .carousel-text li {
   display: inline;
@@ -82,7 +111,7 @@ header img {
   padding: 10px;
   display: block;
   min-width: 200px;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-shadow: 2px 2px 8px #000;
   border-radius: 3px;
 }
@@ -105,10 +134,10 @@ header img {
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  top: 30%; /* Adjust this value to move the positioned div up and down */
+  top: 30%;
   font-size: 135px;
   color: #ffa800;
-  width: 50%; /* Set the width of the positioned div */
+  width: 50%;
   text-shadow: 2px 2px 8px #000;
 }
 .carousel .carousel-text-upto {
@@ -119,65 +148,178 @@ header img {
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  top: 50%; /* Adjust this value to move the positioned div up and down */
+  top: 50%;
   font-size: 40px;
   color: #fff;
-  width: 50%; /* Set the width of the positioned div */
+  width: 50%;
   text-shadow: 2px 2px 8px #000;
 }
 /* -----------------------------Middle Grid------------------------------------------- */
 /* new arrivals and the rest of grid */
 .grid {
-  display: inline-flex;
-  flex: 1 1 533px;
-  max-width: 1759px;
+  display: grid;
+  margin-top: 5rem;
+  grid-gap: 5rem;
+  justify-content: space-between;
+  grid-template-areas:
+    "one two three"
+    "four five six";
+}
+
+/* .grid {
+  display: flex;
+  max-width: 110rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  flex-shrink: 3;
 }
 .grid img {
-  width: 533px; /* width of container */
-  height: 533px; /* height of container */
+  flex: 1;
+  max-width: 100%;
+  max-height: auto;
   overflow: hidden;
   object-fit: cover;
-  object-position: 25% 0px;
-  margin-top: 80px;
+  object-position: 25% 0rem;
+  margin-top: 5rem;
   padding-top: -4px;
-}
+} */
 .picture {
   position: relative;
-  display: inline-block; /* Make the width of box same as image */
 }
 .picture .picture-text {
   position: absolute;
   z-index: 999;
-  margin: 0 auto;
+  margin: 0;
   left: 0;
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  top: 75%; /* Adjust this value to move the positioned div up and down */
+  top: 75%;
   background: rgba(255, 255, 255, 0.5);
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #0a3641;
   text-shadow: 2px 2px 8px #fff;
-  width: 100%; /* Set the width of the positioned div */
-}
-.pay {
-  max-width: 50px;
-  height: auto;
+  width: 100%;
 }
 
-/* -----------------------------footer----------------------------------------------- */
-footer img {
-  width: 100px; /* width of container */
-  height: auto; /* height of container */
+@media only screen and (max-width: 600px) {
+  .grid {
+    justify-content: left;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
 }
+/* -----------------------------footer----------------------------------------------- */
 .top-footer {
   background-color: #9bb9bf;
-  margin-top: 80px;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
+  padding: 1rem;
+  min-height: 16rem;
+  align-items: center;
 }
-.footer {
+.top-footer-left {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+.top-footer-left img {
+  max-width: 20vh;
+  max-width: 35%;
+  max-height: auto;
+  text-align: center;
+}
+.top-footer-center {
+  flex: 1.5;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h4 {
+  color: #000;
+  font-weight: bold;
+}
+form input {
+  background-color: #fff;
+  border: none;
+  height: 2.5rem;
+  width: 22rem;
+  padding-inline-start: 1rem;
+  font-size: 0.7rem;
+  color: #000;
+  margin-right: -0.4rem;
+}
+form button {
   background-color: #495773;
+  border: none;
+  height: 2.7rem;
+  width: 10rem;
+  color: #fff;
+  font-weight: bold;
+}
+.top-footer-right {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 6rem;
+  color: #fff;
+  line-height: 0.3rem;
+  font-size: 0.8rem;
+}
+.top-footer-right h4 a:hover {
+  color: #495773;
+}
+.top-footer-right h4 a {
+  color: #fff;
+  line-height: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  background-color: #495773;
+  padding: 1rem;
+  min-height: 12rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-left {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.footer-center {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-center a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1.7rem;
+  font-size: 0.9rem;
+}
+.footer-center a:hover {
+  text-decoration: underline;
+}
+.footer-right {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-right img {
+  margin: 0rem 2rem;
+}
+.footerimg {
+  width: 7rem;
+  height: auto;
+  display: inline-block;
 }
