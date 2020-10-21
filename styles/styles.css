@@ -2,10 +2,16 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #495773;
   font-size: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+  margin-left: 1.6rem;
+  margin-right: 1.2rem;
+  margin-bottom: 0;
+  min-width: 110rem;
 }
 .container {
   display: flex;
-  max-width: 110rem;
+  /* max-width: 110rem; */
   margin: 0 auto;
 }
 
@@ -20,8 +26,8 @@ body {
   max-width: 35%;
   max-height: auto;
 }
-hr {
-  display: grid;
+/* hr {
+  display: flex;
   max-width: 110rem;
   border: none;
   height: 20px;
@@ -31,7 +37,7 @@ hr {
   border-bottom: 0px solid #1f1209;
   box-shadow: 0 20px 20px -20px #333;
   margin: -50px auto 10px;
-}
+} */
 .cropped {
   width: 1760px;
   height: 677px;
@@ -72,13 +78,16 @@ header img {
   height: 107px;
   width: auto;
 }
-.centera {
+.Layout {
   display: grid;
   max-width: 110rem;
-  margin: 0% 15%;
-  padding-top: 80px;
+  margin: 0 auto;
+  padding: 1rem;
   justify-content: center;
-  position: relative;
+  align-content: center;
+}
+html {
+  padding-top: 3rem;
 }
 
 /* -----------------------------Carousel---------------------------------------------- */
@@ -161,7 +170,7 @@ header img {
 }
 /* -----------------------------Middle Grid------------------------------------------- */
 /* new arrivals and the rest of grid */
-.grid {
+/* .grid {
   display: grid;
   margin-top: 5rem;
   grid-gap: 5rem;
@@ -169,27 +178,66 @@ header img {
   grid-template-areas:
     "one two three"
     "four five six";
-}
+} */
 
-/* .grid {
+.grid {
   display: flex;
-  max-width: 110rem;
-  flex-wrap: wrap;
+  /*   max-width: 110rem; */
+  flex-flow: wrap;
   justify-content: space-between;
+  margin: 0 auto;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   flex-shrink: 3;
 }
 .grid img {
+  position: relative;
   flex: 1;
   max-width: 100%;
   max-height: auto;
   overflow: hidden;
   object-fit: cover;
   object-position: 25% 0rem;
-  margin-top: 5rem;
+  margin-top: 18%;
   padding-top: -4px;
-} */
+  flex-shrink: 3;
+}
+.one {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.two {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.three {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.four {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.five {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.six {
+  flex: 0 0 33.3333%;
+  max-width: 513px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
 .picture {
   position: relative;
 }
@@ -209,19 +257,10 @@ header img {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .grid {
-    justify-self: start;
-    grid-template-areas:
-      "one two"
-      "three four"
-      "five six";
-  }
-}
 /* -----------------------------footer----------------------------------------------- */
 .top-footer {
   background-color: #9bb9bf;
-  margin-top: 5rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -293,6 +332,7 @@ footer {
   min-height: 12rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: -1rem;
 }
 
 .footer-left {
