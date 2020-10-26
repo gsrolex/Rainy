@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
-    <title>Rainydays</title>
+    <title>Women</title>
     <meta charset="UTF-8" />
     <meta
       name="description"
       content="This is a page all about my favourite things"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/Styles.css" type="text/css"/> 
+    <script
+      src="https://kit.fontawesome.com/e92e9edbfb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="Layout">
+    <header>
+      <div class="container">
+         <a href="../index.html">
+          <img class="toplogo" src="../images/RainyDays_Logo.png" alt="Rainy Days Logo" />
+         </a>
+        <div class="Layoutnav">
+         <label for="menu"><i class="fas fa-bars fa-4x"></i></label>
+         <input type="checkbox" id="menu">
+          <nav role="navigation" aria-label="main menu">
+            <ul class="navbar">
+              <li class="women"><a href="../pages/women.html">Women</a></li>
+              <li class="men"><a href="../pages/men.html">Men</a></li>
+              <li class="outlet"><a href="../pages/outlet.html">Outlet</a></li>
+              <div class="topicon">
+                 <img class="search" src="../images/Component 13 – 1.svg" alt="search" />
+                <img class="profile" src="../images/Icon material-person.svg" alt="profile" />
+                <img class="cart" src="../images/shopping-cart.svg" alt="shopping-cart" />
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+     <hr />
+    </header>
+      <main>
+        <div class="carousel">
+          <div class="cropped">
+            <img class="carousel-image" src="../images/mainPicture.jpg"alt="mountain"/>
+          </div>
+          <h1 class="carousel-text-sale">SALE</h1>
+          <h2 class="carousel-text-upto">Up to 30% off</h2>
+          <div class="carousel-text">
+            <ul>
+              <li>
+                <div class="border"><a href="../pages/women.html">Women</a></div>
+              </li>
+
+              <li>
+                <div class="border"><a href="../pages/men.html">Men</a></div>
+              </li>
+
+              <li>
+                <div class="border">
+                  <a href="../pages/outlet.html">Outlet</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <div class="grid">
+        <div class="picture one">
+          <a href="../pages/new arrivals.html">
+           <img src="../images/New arrivals.jpg" alt="" />
+          </a>
+          <h3 class="picture-text text-one">New arrivals</h3>
+        </div>
+        <div class="picture two">
+          <a href="../pages/student offer.html">
+           <img src="../images/StudenOffer.jpg" alt="" />
+          </a>
+          <h3 class="picture-text">Student offer</h3>
+        </div>
+        <div class="picture three">
+          <a href="../pages/outlet.html">
+           <img src="../images/Outlet.jpg" alt="" />
+          </a>
+          <h3 class="picture-text">Outlet</h3>
+        </div>
+        <div class="picture four">
+          <a href="../pages/women.html">
+           <img src="../images/Women.jpg" alt="" />
+          </a>
+          <h3 class="picture-text">Women</h3>
+        </div>
+        <div class="picture five">
+          <a href="../pages/men.html">
+           <img src="../images/Men.jpg" alt="" />
+          </a>
+          <h3 class="picture-text">Men</h3>
+        </div>
+        <div class="picture six">
+          <a href="../pages/retailer near you.html">
+           <img src="../images/retailer near you.jpg" alt="" />
+          </a>
+          <h3 class="picture-text">Retailer near you</h3>
+        </div>
+      </div>
+    <div class="aifooter">
+      <div class="top-footer">
+        <div class="top-footer-left">
+          <a href="../index.html">
+          <img src="../images/RainyDays_Logo.png" alt="Rainy Days Logo" />
+        </a>
+        </div>
+        <div class="top-footer-center">
+          <h4>RAINYDAYS Newsletter</h4>
+          <form action="success.html" method="get">
+            <label for="email"></label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              required
+              placeholder="email@gmail.com"
+            />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+        <div class="top-footer-right">
+          <h4><a href="../pages/contactus.html" title="Contact Us">Contact Us</a></h4>
+          <p>Mon-Fri: 7am-5pm</p>
+          <p>+47 41 01 46 55</p>
+        </a>
+        </div>
+      </div>
+      <footer class="footer-bot">
+        <div class="footer-left">
+          <img class="footerimg" src="../images/posten100px_2.png" alt="" />
+          <img class="footerimg" src="../images/paypal100px_2.png" alt="" />
+          <img class="footerimg" src="../images/visa100px_3.png" alt="" />
+          <img class="footerimg" src="../images/mastercard100px.png" alt="" />
+        </div>
+        <div class="footer-center">
+          <a href="../about/privacy">Terms of Service</a>
+          <a href="../about/legal">Sales and Refunds</a>
+          <a href="../about/legal">Privacy Policy</a>
+        </div>
+        <div class="footer-right">
+          <img class="footerimgs" src="../images/facebooklogo.svg" alt="" />
+          <img class="footerimgs" src="../images/instagramlogo.svg" alt="" />
+          <img class="footerimgs" src="../images/twitterlogo.svg" alt="" />
+          <img class="footerimgs" src="../images/mail.svg" alt="" />
+        </div>
+      </div>
+      </footer>
+    </div>
+  </body>
 </html>
