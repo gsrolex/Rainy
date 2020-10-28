@@ -8,11 +8,16 @@
       content="This is a page all about my favourite things"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles/Styles.css" type="text/css"/> 
+    <link rel="stylesheet" href="../styles/product.css" type="text/css"/> 
     <script
       src="https://kit.fontawesome.com/e92e9edbfb.js"
       crossorigin="anonymous"
     ></script>
+<script>
+function toggleHeart(elmnt) {
+  elmnt.className = elmnt.className == "heart" ? "heart2" : "heart"
+}
+</script>
   </head>
 
   <body>
@@ -48,67 +53,192 @@
           </div>
           <h1 class="carousel-text-sale">SALE</h1>
           <h2 class="carousel-text-upto">Up to 30% off</h2>
-          <div class="carousel-text">
-            <ul>
-              <li>
-                <div class="border"><a href="../pages/women.html">Women</a></div>
-              </li>
-
-              <li>
-                <div class="border"><a href="../pages/men.html">Men</a></div>
-              </li>
-
-              <li>
-                <div class="border">
-                  <a href="../pages/outlet.html">Outlet</a>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
       </main>
-      <div class="grid">
-        <div class="picture one">
-          <a href="../pages/new arrivals.html">
-           <img src="../images/New arrivals.jpg" alt="" />
+      <div class="mobileP">
+       <div class="products">
+        <div class="pro product-one">
+            <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+           <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26800-0400_main_76362.jpg" alt="" />
           </a>
-          <h3 class="picture-text text-one">New arrivals</h3>
+          <p>Hanna</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
-        <div class="picture two">
-          <a href="../pages/student offer.html">
-           <img src="../images/StudenOffer.jpg" alt="" />
+        <div class="pro product-two">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26800-50037_main_117626.jpg" alt="" />
           </a>
-          <h3 class="picture-text">Student offer</h3>
+          <p>Rachel</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
-        <div class="picture three">
-          <a href="../pages/outlet.html">
-           <img src="../images/Outlet.jpg" alt="" />
+        <div class="pro product-three">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26940-6085_main_55680.jpg" alt="" />
           </a>
-          <h3 class="picture-text">Outlet</h3>
+          <p>Amy</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
-        <div class="picture four">
-          <a href="../pages/women.html">
-           <img src="../images/Women.jpg" alt="" />
+        <div class="pro product-four">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27760-1261_main_116658.jpg" alt="" />
           </a>
-          <h3 class="picture-text">Women</h3>
+          <p>Carla</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
-        <div class="picture five">
-          <a href="../pages/men.html">
-           <img src="../images/Men.jpg" alt="" />
+        <div class="pro product-five">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-2203_main_115728.jpg" alt="" />
           </a>
-          <h3 class="picture-text">Men</h3>
+          <p>Jessica</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
-        <div class="picture six">
-          <a href="../pages/retailer near you.html">
-           <img src="../images/retailer near you.jpg" alt="" />
+        <div class="pro product-six">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-5133_main_164415.jpg" alt="" />
           </a>
-          <h3 class="picture-text">Retailer near you</h3>
+          <p>Jane</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-seven">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-6015_main_115729.jpg" alt="" />
+          </a>
+          <p>Kate</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-eight">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27810-2203_main_117407.jpg" alt="" />
+          </a>
+          <p>Serena</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-nine">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27810-5133_main_117607.jpg" alt="" />
+          </a>
+          <p>Sanna</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-ten">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26800-0400_main_76362.jpg" alt="" />
+          </a>
+          <p>Jade</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-eleven">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26800-50037_main_117626.jpg" alt="" />
+          </a>
+          <p>Katie</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-twelve">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-26940-6085_main_55680.jpg" alt="" />
+          </a>
+          <p>Katrine</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-thirteen">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27760-1261_main_116658.jpg" alt="" />
+          </a>
+          <p>Kjerstin</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-fourteen">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-2203_main_115728.jpg" alt="" />
+          </a>
+          <p>Pia</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-fifteen">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-5133_main_164415.jpg" alt="" />
+          </a>
+          <p>Casey</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
+        </div>
+        <div class="pro product-sixteen">
+          <img class="heart" onclick="toggleHeart(this)" src="../images/SVG/favorite-heart-button.svg"  alt="">
+          <a href="product-women.html">
+           <img class="jackets" src="../images/Women/1010-27770-6015_main_115729.jpg" alt="" />
+          </a>
+          <p>Susan</p>
+          <span class="gold">$99</span>
+          <a href="product-women.html">
+           <span class="product-button">View Product</span>
+          </a>
         </div>
       </div>
+    </div>
     <div class="aifooter">
       <div class="top-footer">
         <div class="top-footer-left">
-          <a href="../index.html">
+          <a href="index.html">
           <img src="../images/RainyDays_Logo.png" alt="Rainy Days Logo" />
         </a>
         </div>
@@ -127,7 +257,7 @@
           </form>
         </div>
         <div class="top-footer-right">
-          <h4><a href="../pages/contactus.html" title="Contact Us">Contact Us</a></h4>
+          <h4><a href="contactus.html" title="Contact Us">Contact Us</a></h4>
           <p>Mon-Fri: 7am-5pm</p>
           <p>+47 41 01 46 55</p>
         </a>
