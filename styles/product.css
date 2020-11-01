@@ -122,7 +122,35 @@ html {
     display: block;
   }
 }
+
+.images {
+  display: inline-block;
+  max-width: 100%;
+}
+.shop {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  overflow: hidden;
+  height: 48em;
+  width: 88em;
+  grid-template-areas: "pic mainpic shop-text";
+  max-width: 88em;
+}
+.mainpic {
+  overflow: scroll;
+}
+
+.pic {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 /* -----------------------------Carousel---------------------------------------------- */
+.carousel-image {
+  max-width: 120%;
+  max-height: auto;
+}
 .carousel {
   position: relative;
   display: inline-block;
@@ -145,10 +173,7 @@ html {
   display: flex;
   justify-content: center;
 }
-.carousel-image {
-  max-width: 120%;
-  max-height: auto;
-}
+
 .carousel-text li {
   display: inline;
 }
@@ -203,12 +228,116 @@ html {
   text-shadow: 2px 2px 8px #000;
 }
 /* -----------------------------Middle Grid------------------------------------------- */
-/* .mobilep {
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: auto;
-  padding-left: 5em;
-} */
+.size-box i {
+  display: contents;
+}
+.size-box nav {
+  display: none;
+}
+
+#sizes {
+  display: none;
+}
+
+#sizes:checked ~ nav {
+  display: block;
+}
+
+.fivestar {
+  margin-left: 2em;
+  margin-top: 0.4em;
+  margin-bottom: 8em;
+}
+
+.add-to-basket {
+  display: block;
+  background-color: #495773;
+  border: 3px solid #495773;
+  width: 17em;
+  height: 3.5em;
+  border-radius: 5px;
+  margin: 2em;
+  box-shadow: 1px 2px 3px #707070;
+}
+.select-size {
+  display: block;
+  background-color: #fff;
+  border: 3px solid #495773;
+  width: 17em;
+  height: 3.5em;
+  border-radius: 5px;
+  margin: 2em;
+  box-shadow: 1px 2px 3px #707070;
+}
+.size-box label {
+  position: absolute;
+}
+.add-to-basket p {
+  margin: 1em 2em 1em 3em;
+  font-size: 1.1em;
+  color: #fff;
+}
+.select-size label {
+  margin: 1em 2em 1em 3em;
+  font-size: 1.1em;
+  color: #495773;
+}
+.size-nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 3.7em;
+  margin-left: -2.4em;
+  position: absolute;
+}
+.smallpic {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3em;
+}
+.imagess {
+  max-width: 4em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+.size-nav li {
+  padding-top: 2em;
+  z-index: 1;
+  align-self: center;
+  justify-self: center;
+}
+.s,
+.l {
+  position: relative;
+  background-color: rgb(131, 153, 226);
+  border-radius: 5px;
+  width: 8.5em;
+  padding-left: 8.5em;
+  margin-right: 2.5em;
+  padding-bottom: 1.4em;
+}
+.m {
+  position: relative;
+  background-color: rgb(200, 209, 241);
+  border-radius: 5px;
+  width: 8.5em;
+  padding-left: 8.5em;
+  margin-right: 2.5em;
+  padding-bottom: 1.4em;
+}
+.small-text {
+  font-size: 0.8em;
+  margin-left: 3em;
+}
+
+.james {
+  color: #495773;
+  font-size: 1.4em;
+  margin-bottom: 0em;
+  display: inline-block;
+  padding-right: 6em;
+  margin-left: 1.5em;
+}
 
 .products {
   display: flex;
@@ -307,8 +436,9 @@ html {
     max-width: 35%;
     max-height: auto;
   }
-  .toplogo {
-    display: none;
+  nav a {
+    min-width: 120px;
+    font-size: 1rem;
   }
   body {
     min-width: 71em;
@@ -374,6 +504,9 @@ html {
     margin: auto;
   }
   hr {
+    display: none;
+  }
+  .toplogo {
     display: none;
   }
   .carousel,

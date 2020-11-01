@@ -86,6 +86,18 @@ nav a:hover {
   text-decoration: none;
   background-color: #ececec;
 }
+.login {
+  text-decoration: none;
+  border: none;
+  margin: 0px;
+  min-width: 0px;
+  padding: 0px;
+  display: inline;
+}
+.login:hover {
+  text-decoration: none;
+  background-color: none;
+}
 header img {
   height: 107px;
   width: auto;
