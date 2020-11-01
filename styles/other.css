@@ -1,7 +1,7 @@
 body {
   font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
   color: #404040;
-  background-image: url(/Rainy/images/Front-Login.jpg);
+  background-image: url(../images/Front-Login.jpg);
 }
 
 .login {
