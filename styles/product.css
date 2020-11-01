@@ -348,7 +348,6 @@ html {
   margin-right: -1em;
   margin-left: 1.8em;
   margin-top: 5em;
-  /* background-color: lightblue; */
 }
 .pro {
   max-width: 24%;
@@ -542,18 +541,7 @@ html {
   .Layoutnav i {
     size: 2em;
   }
-  /*   .topicon {
-      flex: 1;
-      order: 1;
-      justify-self: center;
-      align-self: center;
-      flex-direction: row;
-  
-      margin-left: 12em;
-      margin-bottom: -5em;
-      max-width: 20vh;
-      max-height: auto;
-    } */
+
   body {
     min-width: 34em;
     margin-left: 1.5em;
@@ -616,19 +604,6 @@ html {
   .footer-bot {
     min-width: 29.8em;
   }
-  /*   .heart {
-    max-width: 20em;
-    margin-left: 5em;
-    padding-left: 18em;
-    margin-top: 1em;
-  }
-
-  .heart2 {
-    max-width: 25em;
-    margin-left: 5em;
-    padding-left: 17.6em;
-    margin-top: 0.6em;
-  } */
 }
 
 /* -----------------------------footer----------------------------------------------- */

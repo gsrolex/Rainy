@@ -19,10 +19,6 @@ body {
   margin-right: 1.4em;
 }
 
-/* .toplogo .women .men .outlet .search .profile .cart {
-  flex: 1;
-}
- */
 .topicon img {
   flex: 1;
   max-width: 2.2rem;
@@ -36,18 +32,7 @@ body {
   max-width: 35%;
   max-height: auto;
 }
-/* hr {
-  display: flex;
-  max-width: 110rem;
-  border: none;
-  height: 20px;
-  width: 100%;
-  height: 50px;
-  margin-top: 0;
-  border-bottom: 0px solid #1f1209;
-  box-shadow: 0 20px 20px -20px #333;
-  margin: -50px auto 10px;
-} */
+
 .cropped {
   max-width: 1760px;
   max-height: 677px;
@@ -380,18 +365,7 @@ html {
   .Layoutnav i {
     size: 2em;
   }
-  /*   .topicon {
-    flex: 1;
-    order: 1;
-    justify-self: center;
-    align-self: center;
-    flex-direction: row;
 
-    margin-left: 12em;
-    margin-bottom: -5em;
-    max-width: 20vh;
-    max-height: auto;
-  } */
   body {
     min-width: 34em;
     margin-left: 1.5em;
