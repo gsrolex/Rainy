@@ -56,4 +56,5 @@ function removeItemFromCart(index) {
 
     localStorage.setItem("cart", JSON.stringify(items));
     basketList();
+    updateNumberOfItemsInCart()
 }
