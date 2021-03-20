@@ -505,3 +505,66 @@ footer {
   height: auto;
   display: inline-block;
 }
+
+.containertwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.error {
+  color: rgb(245, 28, 57);
+}
+
+.valid {
+  padding-top: 200px;
+  margin-bottom: -200px;
+  text-align: center;
+  color: green;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  font-size: 14px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button-back {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.button-back button {
+  margin-top: 40px;
+  width: 150px;
+  height: 40px;
+}
+
+.notthis {
+  all: none;
+}
+
+.button-back a {
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button-back a:hover {
+  background-color: rgb(218, 74, 103);
+}
+/* Form */
+#formContact .error {
+  display: none;
+}

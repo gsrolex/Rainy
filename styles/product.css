@@ -30,11 +30,15 @@ body {
   margin-left: 1rem;
 }
 .topicon {
-  flex: 1;
+  display: flex;
   padding-left: 8em;
   max-width: 20vh;
   max-width: 35%;
   max-height: auto;
+}
+#shopping-cart-items {
+  align-self: center;
+  padding: 10px;
 }
 /* hr {
     display: flex;
@@ -69,7 +73,7 @@ nav ul {
 nav li {
   display: inline;
 }
-nav a {
+nav li a {
   color: #495773;
   border: 3px solid #495773;
   text-decoration: none;

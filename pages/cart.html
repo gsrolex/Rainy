@@ -55,13 +55,11 @@
                     />
                   </div>
                   <div>
-                    <a href="../pages/cart.html">
-                      <img
-                        class="cart"
-                        src="../images/shopping-cart.svg"
-                        alt="shopping-cart"
-                      />
-                    </a>
+                    <img
+                      class="cart"
+                      src="../images/shopping-cart.svg"
+                      alt="shopping-cart"
+                    />
                   </div>
                   <div id="shopping-cart-items"></div>
                 </div>
@@ -72,107 +70,9 @@
         <hr />
       </header>
       <main>
-        <div class="shop">
-          <nav class="pic">
-            <img
-              class="images"
-              src="../images/productpage/Image 1.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/Image 4.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/Image 6.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/mail.svg.jpg"
-              alt=""
-            />
-          </nav>
-          <div class="mainpic">
-            <img
-              class="images"
-              src="../images/productpage/Image 1.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/Image 4.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/Image 6.jpg"
-              alt=""
-            />
-            <img
-              class="images"
-              src="../images/productpage/mail.svg.jpg"
-              alt=""
-            />
-          </div>
-          <div class="shop-text">
-            <p class="james">James</p>
-            <span class="gold">$99</span>
-            <p class="fivestar">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </p>
-            <div smallpic>
-              <img
-                class="imagess"
-                src="../images/productpage/Image 1.jpg"
-                alt=""
-              />
-              <img
-                class="imagess"
-                src="../images/productpage/Image 4.jpg"
-                alt=""
-              />
-              <img
-                class="imagess"
-                src="../images/productpage/Image 6.jpg"
-                alt=""
-              />
-            </div>
-            <div class="select-size">
-              <div class="size-box">
-                <label for="sizes">Select your size</label>
-                <input type="checkbox" id="sizes" />
-                <nav role="navigation" aria-label="main menu">
-                  <ul class="size-nav">
-                    <li class="s">S</li>
-                    <li class="m">M</li>
-                    <li class="l">L</li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <button
-              onclick="addToBasket('James', 'M', 99.00)"
-              class="add-to-basket"
-            >
-              ADD TO BASKET <i class="fas fa-shopping-cart"></i>
-            </button>
-            <div class="small-text">
-              <ul>
-                <li>Free shipping</li>
-                <li>100-day return</li>
-                <li>Free returns</li>
-                <li>Price match</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1>Your Cart</h1>
+        <div class="cart-items"></div>
       </main>
-
       <div class="aifooter">
         <div class="top-footer">
           <div class="top-footer-left">
@@ -223,5 +123,8 @@
     </div>
 
     <script src="../js/basket.js"></script>
+    <script>
+      basketList();
+    </script>
   </body>
 </html>
