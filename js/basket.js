@@ -12,7 +12,7 @@ function getItems() {
     return items;
 }
 
-function saveItemToLocalStorage(itemName, size, price) {    
+function saveItemToLocalStorage(itemName, size, price) {
     let items = getItems();
 
     const item = [itemName, size, price];
@@ -44,6 +44,7 @@ function basketList() {
 
         resultsContainer.innerHTML += `<div class="cart-item">
                                         <h2>${itemName} ${size} $${price}</h2>
+                                        <img class="imagess "src="../images/productpage/Image 1.jpg" alt="" />
                                         <p><button onClick="removeItemFromCart(${i})">Remove</button></p>
                                       </div>`
     }

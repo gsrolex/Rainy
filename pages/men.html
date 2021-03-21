@@ -36,9 +36,10 @@ function toggleHeart(elmnt) {
               <li class="men"><a href="men.html">Men</a></li>
               <li class="outlet"><a href="outlet.html">Outlet</a></li>
               <div class="topicon">
-                 <img class="search" src="../images/Component 13 – 1.svg" alt="search" />
-                <img class="profile" src="../images/Icon material-person.svg" alt="profile" />
-                <img class="cart" src="../images/shopping-cart.svg" alt="shopping-cart" />
+                <div><img class="search" src="../images/Component 13 – 1.svg" alt="search"/></div>
+                <div><img class="profile" src="../images/Icon material-person.svg" alt="profile"/></div>
+                <div><a href="../pages/cart.html"><img class="cart" src="../images/shopping-cart.svg" alt="shopping-cart"/></a></div>
+                <div id="shopping-cart-items"></div>
               </div>
             </ul>
           </nav>
@@ -284,5 +285,6 @@ function toggleHeart(elmnt) {
       </div>
       </footer>
     </div>
+    <script src="../js/basket.js"></script>
   </body>
 </html>

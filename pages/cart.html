@@ -69,9 +69,38 @@
         </div>
         <hr />
       </header>
-      <main>
-        <h1>Your Cart</h1>
+      <main >
+        <h1 class="yourcart">Your Cart</h1>
         <div class="cart-items"></div>
+        <div class="valid" id="formValidated"><small>Form is valid!</small></div>
+        <div class="containertwo">
+            <form id="formContact">
+                <div >
+                    <label>
+                        Cardholder Name
+                        <input name="cardname" id="myName" placeholder="John More Doe"/>
+                    </label>
+                    <div class="error" id="myNameError"><small> Cardholder Name</small></div>
+                </div>
+                <div>
+                    <label>
+                        <span class="account">Account Number</span>
+                        <input name="Account Number" id="email" placeholder="1111-2222-3333-4444" />
+                    </label>
+                    <div class="error" id="emailError"><small>Account Number</small></div>
+                </div>
+                <div>
+                    <label>
+                        <span class="CVV">CVV</span>
+                        <input name="cvv" id="address" placeholder="132"/>
+                    </label>
+                    <div class="error" id="addressError"><small>CVV</small></div>
+                </div>
+                <div class="button-back">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+          </div>
       </main>
       <div class="aifooter">
         <div class="top-footer">
@@ -123,6 +152,7 @@
     </div>
 
     <script src="../js/basket.js"></script>
+    <script src="../js/visa.js"></script>
     <script>
       basketList();
     </script>

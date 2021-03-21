@@ -568,3 +568,21 @@ input {
 #formContact .error {
   display: none;
 }
+
+.containertwo input {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+}
+
+.contact-us-h1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: -150px;
+}
+
+.valid {
+  margin-bottom: -130px;
+}

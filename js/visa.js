@@ -2,17 +2,16 @@ const form = document.querySelector("#formContact");
 const formValidated = document.querySelector("#formValidated");
 const myName = document.querySelector("#myName");
 const myNameError = document.querySelector("#myNameError");
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
+const address = document.querySelector("#address");
+const addressError = document.querySelector("#addressError");
 
 function checkLength(value, len) {
     return value.trim().length > len;
 }
 
 function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
@@ -40,13 +39,7 @@ function validateForm(event) {
         myNameError.style.display = "block";
     }
 
-    var subjectValid = false;
-    if (checkLength(subject.value, 24) === true) {
-        subjectValid = true;
-        subjectError.style.display = "none";
-    } else {
-        subjectError.style.display = "block";
-    }
+
 
     var emailValid = false;
     if (validateEmail(email.value) === true) {
@@ -56,9 +49,15 @@ function validateForm(event) {
         emailError.style.display = "block";
     }
 
+    var addressValid = false;
+    if (checkLength(address.value, 5) === true) {
+        addressValid = true;
+        addressError.style.display = "none";
+    } else {
+        addressError.style.display = "block";
+    }
 
-
-    const isFormValid = nameValid === true && subjectValid === true && emailValid === true;
+    const isFormValid = nameValid === true && emailValid === true && addressValid === true;
 
     if (isFormValid) {
         console.log("it works");
@@ -71,10 +70,11 @@ function validateForm(event) {
 
 function intializeListeners() {
     form.addEventListener("submit", validateForm);
+
     formValidated.style.display = "none";
     myName.addEventListener("keyup", keyEvent);
-    subject.addEventListener("keyup", keyEvent);
     email.addEventListener("keyup", keyEvent);
+    address.addEventListener("keyup", keyEvent);
 }
 
 intializeListeners();

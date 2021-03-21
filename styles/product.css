@@ -374,7 +374,7 @@ html {
   margin-bottom: 0em;
 }
 .gold {
-  color: #d9aa52;
+  color: #d69e36;
   font-size: 1.2em;
   padding-left: 1.2em;
 }
@@ -724,4 +724,62 @@ footer {
   width: 5em;
   height: auto;
   display: inline-block;
+}
+
+.cart-items {
+  display: flex;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #495773;
+  border-radius: 5px;
+  padding: 1.5em;
+  flex-wrap: wrap;
+  border-width: 2px;
+}
+.cart-item {
+  border-style: solid;
+  border-color: #495773;
+  padding: 1.5em;
+  margin: 2px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+.cart-items h2 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.yourcart {
+  display: flex;
+  justify-content: center;
+}
+.cart-items p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formContact .error {
+  display: none;
+}
+
+.containertwo {
+  display: flex;
+  justify-content: center;
+}
+
+.containertwo input {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: 5px;
+}
+.account {
+  padding-right: 6px;
+}
+.CVV {
+  padding-right: 106px;
+}
+
+.button-back {
+  display: flex;
+  justify-content: center;
 }
