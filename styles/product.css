@@ -134,7 +134,7 @@ html {
 .shop {
   margin-top: 5em;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  /* grid-template-columns: 1fr 5fr; */
   grid-gap: 20px;
   overflow: hidden;
   height: 48em;
@@ -142,14 +142,7 @@ html {
   grid-template-areas: "pic mainpic shop-text";
   max-width: 88em;
 }
-.mainpic {
-  overflow: scroll;
-}
 
-.pic {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
 /* -----------------------------Carousel---------------------------------------------- */
 .carousel-image {
   max-width: 120%;
@@ -248,9 +241,10 @@ html {
 }
 
 .fivestar {
+  color: #f3dc09;
   margin-left: 2em;
   margin-top: 0.4em;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .add-to-basket {
@@ -262,6 +256,10 @@ html {
   border-radius: 5px;
   margin: 2em;
   box-shadow: 1px 2px 3px #707070;
+}
+.add-to-basket:hover {
+  border-color: #66779b;
+  cursor: pointer;
 }
 .select-size {
   display: block;
@@ -336,11 +334,11 @@ html {
 
 .james {
   color: #495773;
-  font-size: 1.4em;
+  font-size: 2.5em;
   margin-bottom: 0em;
   display: inline-block;
   padding-right: 6em;
-  margin-left: 1.5em;
+  margin-left: 0.6em;
 }
 
 .products {
@@ -376,7 +374,7 @@ html {
 .gold {
   color: #d69e36;
   font-size: 1.2em;
-  padding-left: 1.2em;
+  padding-left: 2em;
 }
 .product-button {
   background-color: #fff;
