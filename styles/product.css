@@ -134,11 +134,9 @@ html {
 .shop {
   margin-top: 5em;
   display: grid;
-  /* grid-template-columns: 1fr 5fr; */
+  grid-template-columns: 2fr 1fr !important;
   grid-gap: 20px;
   overflow: hidden;
-  height: 48em;
-  width: 88em;
   grid-template-areas: "pic mainpic shop-text";
   max-width: 88em;
 }
@@ -271,8 +269,10 @@ html {
   margin: 2em;
   box-shadow: 1px 2px 3px #707070;
 }
+
 .size-box label {
-  position: absolute;
+  position: relative;
+  top: 16px;
 }
 .add-to-basket p {
   margin: 1em 2em 1em 3em;
@@ -288,7 +288,7 @@ html {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-top: 3.7em;
+  margin-top: 2.5em;
   margin-left: -2.4em;
   position: absolute;
 }
@@ -303,29 +303,25 @@ html {
   margin-bottom: 1em;
 }
 .size-nav li {
-  padding-top: 2em;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
   z-index: 1;
-  align-self: center;
   justify-self: center;
+  width: 16.5em;
+  text-align: center;
 }
+
+.select-size:hover {
+  cursor: pointer;
+}
+
 .s,
 .l {
-  position: relative;
   background-color: rgb(131, 153, 226);
-  border-radius: 5px;
-  width: 8.5em;
-  padding-left: 8.5em;
-  margin-right: 2.5em;
-  padding-bottom: 1.4em;
 }
 .m {
-  position: relative;
   background-color: rgb(200, 209, 241);
-  border-radius: 5px;
-  width: 8.5em;
-  padding-left: 8.5em;
-  margin-right: 2.5em;
-  padding-bottom: 1.4em;
 }
 .small-text {
   font-size: 0.8em;
@@ -494,6 +490,10 @@ html {
   .top-footer,
   .footer-bot {
     min-width: 65.5em;
+  }
+
+  .shop {
+    grid-template-columns: 1fr !important;
   }
 }
 

@@ -30,7 +30,7 @@ function createHTML(products) {
                                            <a href="product-women.html?id=${product.id}"><img class="jackets" src="${product.images[0].src}" alt="${product.name}" /></a>
                                            <p>${product.name}</p>
                                            <span class="gold">${product.prices.currency_symbol}${product.prices.price}</span>
-                                           <a href="product-women.html?id=${product.id}"></a><span class="product-button">View Product</span></a>
+                                           <a href="product-women.html?id=${product.id}"><span class="product-button">View Product</span></a>
                                         </div>`;
     })
 }
